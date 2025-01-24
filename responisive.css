@@ -1,0 +1,43 @@
+@media(max-width:1070px){
+    /* html{
+        font-size: 60px;
+    } */
+    .container{
+        padding: 0 60px;
+    }
+}
+@media(max-width:900px){
+    /* html{
+        font-size: 40px;
+    } */
+    .container{
+        padding: 0 60px;
+    }
+    .btn{
+        
+        display: block;
+    }
+    .navbar nav{
+        /* display: flex;
+        align-items: center; */
+        flex-direction: column;
+        position: fixed;
+        min-width: 100%;
+        min-height: 60vh;
+        top: 0;
+        right: 0;
+        background: #000;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar nav li{
+        margin: 2rem 4rem;
+    }
+    .navbar nav li a{
+        font-size: 1.4rem;
+        color: var(--white_color);
+        position: relative;
+    }
+    
+}
+

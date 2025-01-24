@@ -1,0 +1,134 @@
+:root{
+    --primary_color: #e74c3c;
+    --white_color:#fff;
+
+    --ubutu:"ubutu";
+    --feeling:"Feeling";
+    --box-shadow: 10px 10px 5px rgba(0,0,0,.3);
+}
+
+/* html{
+    font-size: 80%;
+} */
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: "poppins";
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+header{
+width: 100%;
+background: rgba(0,0,0,.3);
+position: fixed;
+padding: 1.5rem 0;
+}
+
+.logo img{
+    display: block;
+    object-fit: cover;
+    width: 20%;
+    border-radius: 50%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar nav{
+    display: flex;
+    align-items: center;
+}
+.navbar nav li{
+    list-style-type:none ;
+    margin: 0 1rem;
+}
+
+.navbar nav li a{
+    font-size: 1.3rem;
+    color: var(--white_color);
+    position: relative;
+}
+
+.navbar nav li a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: var(--primary_color);
+    width: 0;
+    left: 0;
+    top: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar nav li a:hover::after{
+    width: 100%;
+}
+.btn{
+    font-size: 2.2rem;
+    color: var(--white_color);
+    cursor: pointer;
+    display: none;
+}
+
+#showcase{
+    height: 100vh;
+    background-image: url(https://thumbs.dreamstime.com/b/different-spices-herbs-stone-table-top-view-ingredients-cooking-food-background-different-spices-herbs-black-120232209.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'DM  sans', sans-serif;
+    z-index: -10;
+}
+
+#showcase::before{
+    content: "";
+    background:rgba(0,0,0,.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -11;
+}
+#showcase>.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    /* border-radius: 50%; */
+}
+
+.content{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+   
+}
+.content>img{
+    border-radius: 50%;
+}
+.content>h2{
+    top:50%;
+    left: 50%;
+    color: var(--white_color); 
+   
+}
+.content>h3{
+    color: var(--white_color); 
+   
+}
+
+ 
