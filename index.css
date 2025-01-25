@@ -38,7 +38,7 @@ padding: 1.5rem 0;
 .logo img{
     display: block;
     object-fit: cover;
-    width: 20%;
+    width: 10%;
     border-radius: 50%;
 }
 .navbar{
@@ -107,28 +107,34 @@ padding: 1.5rem 0;
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    /* border-radius: 50%; */
+}
+#showcase>.content h2{
+    font-size: 4rem;
+    font-family: var(--righteous);
+    color:var(--white_color);
+    text-align: center;
+    letter-spacing: 2px;
+}
+#showcase>.content h3{
+    font-size: 2rem;
+    font-family: var(--righteous);
+    color:var(--white_color);
+    text-align: center;
+    letter-spacing: 2px;
 }
 
 .content{
     position: absolute;
     top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%); 
+    left: 40%;
+    transform: translate(-50%,-50%);
+    
    
 }
 .content>img{
     border-radius: 50%;
+    width: 300px;
 }
-.content>h2{
-    top:50%;
-    left: 50%;
-    color: var(--white_color); 
-   
-}
-.content>h3{
-    color: var(--white_color); 
-   
-}
+
 
  
