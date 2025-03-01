@@ -4,49 +4,620 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEAL MATCH</title>
+    <link rel="stylesheet" href="./login.html">
+    <link rel="stylesheet" href="./signup.html">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="responisive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font.awesome/6.2.1/css/all.min.css"/>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-<header>
-    <div class="container">
-    <div class="navbar">
-    <div class="logo">
-        <a href="#"><img src="https://img.freepik.com/premium-vector/food-logo-design_985554-6.jpg"></a>
-    </div>
-
-    <nav>
-        <div class="btn">
-            <li class="fas fa-times close-btn"></li>
-        </div>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Menus</a></li>
-        <li><a href="#">Relevaction</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contant</a></li>
-
-    </nav>
-    <div class="btn">
-        <li class="fas fa-bars menu-btn"></li>
-    </div>
-    </div>
-    </div>
-</header>
-
-
-<main id="showcase">
     
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#"><img src="https://img.freepik.com/premium-vector/food-logo-design_985554-6.jpg"></a>
+                </div>
+                <nav style="display: flex; gap: 30px;">
+                    <div class="btn">
+                        <li class="fas fa-times close-btn"></li>
+                    </div>
+                    <div style="display: flex;">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menus</a></li>
+                        <li><a href="#">Relevaction</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contant</a></li>
+                    </div>
+                    <div>
+                    </div>
+                </nav>
+                <div class="btn">
+                    <li class="fas fa-bars menu-btn"></li>
+                </div>
+            </div>
+        </div>
+     </header>
+    <main id="showcase">
         <div class="content">
-            <img src="https://img.freepik.com/premium-vector/food-logo-design_985554-6.jpg"alt="" />
+            <img src="https://img.freepik.com/premium-vector/food-logo-design_985554-6.jpg" alt="" />
             <h2>SURRISE YOUR PLATE</h2>
-            <h3>Fine Food + Dinkes</h3>
-        </div> 
-     
-</main>
+            <h3>Fine Food + Drinks</h3>
+        </div>
+    </main>
+    <aside id="sp_offer">
+        <div class="container">
+            <div class="sp_content">
+                <div class="left_side_content">
+                    <div class="headings">
+                        <h3>From The Menus</h3>
+                        <h2>SPECIAL OFFERS</h2>
+                    </div>
+                    <div class="imgs_content">
+                        <div class="imgs">
+                            <img src="https://media.istockphoto.com/id/1340888879/photo/pasta-salad.jpg?s=612x612&w=0&k=20&c=V7AQZmedfzH7Pxtrv5PUFQBlvmabaTEwOCkJKojbl6M="
+                                width="180">
+                            <div class="content_for_img">
+                                <h4>pring veg & pasta</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <p>Rs100</p>
+                        </div>
+                    </div>
+                    <div class="imgs_content">
+                        <div class="imgs">
+                            <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/1/24/1/FNM_030112-WNDinners-003_s4x3.jpg.rend.hgtvcom.1280.960.85.suffix/1371603902828.webp"
+                                width="180" alt="">
+                            <div class="content_for_img">
+                                <h4>pring veg & pasta</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <p>Rs100</p>
+                        </div>
+                    </div>
+                    <div class="imgs_content">
+                        <div class="imgs">
+                            <img src="https://instantpoteats.com/wp-content/uploads/2021/08/instant-pot-creamy-sausage-pasta-italian-f.jpg"
+                                width="180" alt="">
+                            <div class="content_for_img">
+                                <h4>pring veg & pasta</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <p>Rs100</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_side_content">
+                    <div class="img_right_side">
+                        <img src="c:\Users\itssh\OneDrive\Documents\food img.jpg">
+                        <div class="over_img">
+                            <a href="#">
+                                <h2>Menus</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div id="reservation_tbl">
+        <div class="container">
+            <div class="form_data">
+                <h3 class="normal_heading">Your Table</h3>
+                <h2 class="main_heading">reservation Now..</h2>
+                <form action="#">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="email" required>
+                    <input type="password" placeholder="password" required>
+                    <input type="password" placeholder=" conform password" required>
+                    <textarea name="" id="" cols="8" rows="8" placeholder="message request" required></textarea>
+                    <button>Bock Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section id="deal_Today">
+        <div class="container swiper">
+            <h3 class="normal_heading-1">deal_Today</h3>
+            <h2 class="main_heading-1">TODAY SPECIAL DISH</h2>
+            <div class="slider-wrapper">
+                <div class="card_content swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <img src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg"
+                            width="300" height="300" alt="">
+                        <h4>Burger</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, unde? Ipsam possimus ipsum
+                            optio dolor deleniti excepturi dignissimos mollitia.</p>
+                        <p class="price">OnlyRs150</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="https://content.jdmagicbox.com/comp/barnala/z6/9999p1679.1679.190911024953.c4z6/catalogue/crispy-pizza-cafe-tapa-barnala-pizza-outlets-46mxfj9w42.jpg"
+                            width="300" height="300" alt="">
+                        <h4>pizza</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, unde? Ipsam possimus ipsum
+                            optio dolor deleniti excepturi dignissimos mollitia.</p>
+                        <p class="price">OnlyRs200</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDYv4e3oCds4vmoe6W4RRC8pa0kKtaHVJzkQ&s"
+                            width="300" height="300" alt="">
+                        <h4>sandwich</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, unde? Ipsam possimus ipsum
+                            optio dolor deleniti excepturi dignissimos mollitia.</p>
+                        <p class="price">OnlyRs120</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg"
+                            width="300" height="300" alt="">
+                        <h4>Burger</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, unde? Ipsam possimus ipsum
+                            optio dolor deleniti excepturi dignissimos mollitia.</p>
+                        <p class="price">OnlyRs150</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="https://content.jdmagicbox.com/comp/barnala/z6/9999p1679.1679.190911024953.c4z6/catalogue/crispy-pizza-cafe-tapa-barnala-pizza-outlets-46mxfj9w42.jpg"
+                            width="300" height="300" alt="">
+                        <h4>pizza</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, unde? Ipsam possimus ipsum
+                            optio dolor deleniti excepturi dignissimos mollitia.</p>
+                        <p class="price">OnlyRs200</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDYv4e3oCds4vmoe6W4RRC8pa0kKtaHVJzkQ&s"
+                            width="300" height="300" alt="">
+                        <h4>sandwich</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, unde? Ipsam possimus ipsum
+                            optio dolor deleniti excepturi dignissimos mollitia.</p>
+                        <p class="price">OnlyRs120</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
 
+    <section id="food_lover">
+        <div class="container1">
+            <h3 class="normal_heading-1">Food Lover</h3>
+            <h2 class="main_heading-1">RESTURANT MENU</h2>
+            <div class="food_lover_container">
+                <div class="btn_continer">
+                    <button type="button" class="btn-cat active_btn" data-id="all">
+                        All Dishes
+                    </button>
+                    <button type="button" class="btn-cat" data-id="Dinner">
+                        Dinner
+                    </button>
+                    <button type="button" class="btn-cat" data-id="Lunch">
+                        Lunch
+                    </button>
+                    <button type="button" class="btn-cat" data-id="Drinks">
+                        Drinks
+                    </button>
+                    <button type="button" class="btn-cat" data-id="starter">
+                        starter
+                    </button>
+                </div>
+            </div>
+            <div class="menus_item_continer">
+                <div class="img_cards">
+                    <img src="https://assets.limetray.com/assets/user_images/menus/compressed/1709545228_OAChickenDrumsticksLegPieceinChilliSauce.webp"
+                        alt="">
+                    <p class="price">only on Rs100</p>
+                    <p>chicken-lollipop</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoIycguxFgTpIN3L00tYQhJ2WkypXj5w_QkQ&s"
+                        alt="">
+                    <p class="price">only on Rs150</p>
+                    <p>chicken biryani</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOpSWuX15EBWpTCmP0iLJ1ab8n4l8uC2AqYQ&s"
+                        alt="">
+                    <p class="price">only on Rs120</p>
+                    <p>chicken-65</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://kristineskitchenblog.com/wp-content/uploads/2024/07/chicken-shawarma-06-3.jpg"
+                        alt="">
+                    <p class="price">only on Rs200</p>
+                    <p>chicken-shawarma</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://vps029.manageserver.in/test/wp-content/uploads/2024/04/images-7.jpeg" alt="">
+                    <p class="price">only on Rs180</p>
+                    <p>veg-shawarma</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://orders.popskitchen.in/storage/2024/09/image-358.png" alt="">
+                    <p class="price">only on Rs100</p>
+                    <p>paneer-tika</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://sangskitchen.b-cdn.net/wp-content/uploads/2018/09/veg-fried-rice-front-500x375.png"
+                        alt="">
+                    <p class="price">only on Rs100</p>
+                    <p>veg-fried rice</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2012/12/chilli-mushroom-stir-fry-500x375.jpg"
+                        alt="">
+                    <p class="price">only on Rs140</p>
+                    <p>mashroom-chill</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://static.toiimg.com/thumb/86415772.cms?imgsize=69484&width=800&height=800" alt="">
+                    <p class="price">only on Rs120</p>
+                    <p>masala rice</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://static.toiimg.com/thumb/86415772.cms?imgsize=69484&width=800&height=800" alt="">
+                    <p class="price">only on Rs120</p>
+                    <p>masala rice</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://www.saveur.com/uploads/2007/02/SAVEUR_Mojito_1149-Edit-scaled.jpg?auto=webp&auto=webp&optimize=high&quality=70&width=1440"
+                        alt="">
+                    <p class="price">only on Rs60</p>
+                    <p>mojito</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://cookingwithjanica.com/wp-content/uploads/2023/06/blue_mojito.jpg" alt="">
+                    <p class="price">only on Rs80</p>
+                    <p> Blue mojito</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://www.indianveggiedelight.com/wp-content/uploads/2023/01/masala-chaas-featured.jpg"
+                        alt="">
+                    <p class="price">Only on Rs50</p>
+                    <p>Butter milk</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://img.freepik.com/premium-photo/kitkat-chocolate-milkshake-topped-with-ice-cream-choco-chips-served-glass-rustic-wooden-backgrounda-refreshing-drink-summer-days-selective-focus-top_726363-415.jpg"
+                        alt="">
+                    <p class="price">Only on Rs120</p>
+                    <p>kitkat milkshake</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://www.unicornsinthekitchen.com/wp-content/uploads/2018/08/Strawberry-Milkshake-square.jpg"
+                        alt="">
+                    <p class="price">Only on Rs120</p>
+                    <p>strawberry milkshake</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://eatingglutenanddairyfree.com/wp-content/uploads/2020/02/EGADFHomemadeoreomilkshake6.jpg"
+                        alt="">
+                    <p class="price">Only on Rs120</p>
+                    <p>oreo milkshake</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSrs1gSf9JvvQAFxGoAxS7nXKgU7I37_gOVw&s"
+                        alt="">
+                    <p class="price">Only on Rs50</p>
+                    <p>pineapple juice</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://t4.ftcdn.net/jpg/07/04/98/39/360_F_704983944_1zZKWb6ZeD0A1Xih0m403ezMSIu36TCX.jpg"
+                        alt="">
+                    <p class="price">Only on Rs100</p>
+                    <p>chocolate juice</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://www.whiskaffair.com/wp-content/uploads/2021/06/Mango-Juice-2-3-500x500.jpg"
+                        alt="">
+                    <p class="price">Only on Rs70</p>
+                    <p>mango juice</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://i.pinimg.com/736x/8b/c5/93/8bc59360cb5c2689b91a3163640a2bf7.jpg" alt="">
+                    <p class="price">Only on Rs100</p>
+                    <p>momos</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://cdn.tarladalal.com/members/9306/procstepimgs/grilled-veg-pizza-sandwich-recipe-(12)-7-192275.jpg"
+                        alt="">
+                    <p class="price">Only on Rs100</p>
+                    <p>sandwich</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://www.awesomecuisine.com/wp-content/uploads/2008/03/cauliflower_65.jpg" alt="">
+                    <p class="price">Only on Rs100</p>
+                    <p>Gobi-65</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://i0.wp.com/khaddoroshik.com/wp-content/uploads/2024/06/Paneer-Fried-Rice-Quick-and-Delicious-Vegetarian-Fried-Rice-Recipe.webp"
+                        alt="">
+                    <p class="price">Only on Rs100</p>
+                    <p>panner fried rice</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://vismaifood.com/storage/app/uploads/public/c5d/83b/985/thumb__700_0_0_0_auto.jpg"
+                        alt="">
+                    <p class="price">Only on Rs100</p>
+                    <p>Gobi rice</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://www.indianveggiedelight.com/wp-content/uploads/2022/10/curd-rice.jpg" alt="">
+                    <p class="price">Only on Rs60</p>
+                    <p>Curd rice</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://priyafoods.com/cdn/shop/files/JEERARICE_2.jpg?v=1701948113" alt="">
+                    <p class="price">Only on Rs80</p>
+                    <p>jeera rice</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://www.indianveggiedelight.com/wp-content/uploads/2019/07/veg-pulao-featured.jpg"
+                        alt="">
+                    <p class="price">Only on Rs80</p>
+                    <p>pulao rice</p>
+                </div>
+                <div class="img_cards">
+                    <img src="https://static.toiimg.com/thumb/53098310.cms?width=1200&height=900" alt="">
+                    <p class="price">Only on Rs150</p>
+                    <p>veg biryani</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="customer_feedback">
+        <div class="container swiper">
+            <h3 class="normal_heading">Food Lover</h3>
+            <h2 class="main_heading-2">CUSTOMER FEEDBACK</h2>
+            <div class="slider-wrapper">
+                <div class="customer_cards_container swiper-wrapper">
+                    <div class="customer_card swiper-slide">
+                        <img src="https://i.mydramalist.com/wdOeY_5f.jpg" width="150" height="150" alt="" />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos voluptates
+                            odit atque commodi ea provident odio.</p>
+                        <p class="name">Kim Taehyung</p>
+                    </div>
+                    <div class="customer_card swiper-slide">
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202210/jimin-bts-_birthday-one_one.jpg?VersionId=L2czCFbbqe6527pVx_iVEReVnK0X4_YP"
+                            width="150" height="150" alt="" />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos voluptates
+                            odit atque commodi ea provident odio.</p>
+                        <p class="name">jimin</p>
+                    </div>
+                    <div class="customer_card swiper-slide">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBdNqV3r4aRYXr8cfDfg0LZ0UCJwcb7IZH0w&s"
+                            width="150" height="150" alt="" />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos voluptates
+                            odit atque commodi ea provident odio.</p>
+                        <p class="name">jungkook</p>
+                    </div>
+                    <div class="customer_card swiper-slide">
+                        <img src="https://i.mydramalist.com/wdOeY_5f.jpg" width="150" height="150" alt="" />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos voluptates
+                            odit atque commodi ea provident odio.</p>
+                        <p class="name">Kim Taehyung</p>
+                    </div>
+                    <div class="customer_card swiper-slide">
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202210/jimin-bts-_birthday-one_one.jpg?VersionId=L2czCFbbqe6527pVx_iVEReVnK0X4_YP"
+                            width="150" height="150" alt="" />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos voluptates
+                            odit atque commodi ea provident odio.</p>
+                        <p class="name">jimin</p>
+                    </div>
+                    <div class="customer_card swiper-slide">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBdNqV3r4aRYXr8cfDfg0LZ0UCJwcb7IZH0w&s"
+                            width="150" height="150" alt="" />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos voluptates
+                            odit atque commodi ea provident odio.</p>
+                        <p class="name">jungkook</p>
+                    </div>
+                </div>
+            </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <section id="up_commig_events">
+        <div class="container swiper">
+            <h3 class="normal_heading-1">Month of March</h3>
+            <h2 class="main_heading-1">UPCOMMING EVENTS</h2>
+            <div class="slider-wrapper">
+                <div class="events_cards_container swiper-wrapper">
+                    <div class="events_card swiper-slide">
+                        <img src="https://simshomekitchen.com/wp-content/uploads/2024/04/buldak-noodle.jpg" alt="" />
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                odit atque commodi ea provident odio.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="events_card swiper-slide">
+                        <img src="https://images.chinahighlights.com/allpicture/2017/10/015430cd96d3447a9e7d2a2c_cut_800x500_61.jpg"
+                            alt="" />
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                odit atque commodi ea provident odio.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="events_card swiper-slide">
+                        <img src="https://www.shudhrestaurant.com/images/6.jpeg" alt="" />
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                odit atque commodi ea provident odio.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="events_card swiper-slide">
+                        <img src="https://simshomekitchen.com/wp-content/uploads/2024/04/buldak-noodle.jpg" alt="" />
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                odit atque commodi ea provident odio.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="events_card swiper-slide">
+                        <img src="https://images.chinahighlights.com/allpicture/2017/10/015430cd96d3447a9e7d2a2c_cut_800x500_61.jpg"
+                            alt="" />
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                odit atque commodi ea provident odio.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="events_card swiper-slide">
+                        <img src="https://www.shudhrestaurant.com/images/6.jpeg" alt="" />
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                                odit atque commodi ea provident odio.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    </section>
+    <section id="static_counter">
+        <div class="container">
+            <div class="counters">
+                <div class="counter">
+                    <div class="num" data-ceil="291">291</div>
+                    <h2>Best Dishes</h2>
+                </div>
+                <div class="counter">
+                    <div class="num" data-ceil="710">710</div>
+                    <h2>Awards Won</h2>
+                </div>
+                <div class="counter">
+                    <div class="num" data-ceil="153">153</div>
+                    <h2>Our Chefcs</h2>
+                </div>
+                <div class="counter">
+                    <div class="num" data-ceil="121">121</div>
+                    <h2>Daily Customer</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="chef">
+        <div class="container swiper">
+            <h3 class="normal_heading-1">Chef Team</h3>
+            <h2 class="main_heading-1">BEST CHEFS FOR YOU</h2>
+            <div class="slider-wrapper">
+                <div class="chef_container swiper-wrapper">
+                    <div class="chef_cards swiper-slide">
+                        <img src="https://i.pinimg.com/736x/d3/c4/2c/d3c42c4d91c6d24b89bf8ab2175e9f75.jpg" alt="" />
+                        <div class="chef_content">
+                            <h2>Remeno Fentos</h2>
+                            <p class="position">senior chef</p>
+                            <div class="social_icons">
+                                <i class="fa-brands fa-square-facebook"></i>&nbsp;&nbsp;
+                                <i class="fa-brands fa-square-instagram"></i>&nbsp;&nbsp;
+                                <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chef_cards swiper-slide">
+                        <img src="https://media.istockphoto.com/id/1204174960/photo/indian-asian-woman-chef-wearing-apron-and-holding-wooden-spatula-while-standing-isolated-over.jpg?s=612x612&w=0&k=20&c=llhC-Q5cRGnlN9nCIVsQb4Uhk32mF0Fnmag2RM7SwBU="
+                            alt="" />
+                        <div class="chef_content">
+                            <h2>Remeno Fentos</h2>
+                            <p class="position">senior chef</p>
+                            <div class="social_icons">
+                                <i class="fa-brands fa-square-facebook"></i>&nbsp;&nbsp;
+                                <i class="fa-brands fa-square-instagram"></i>&nbsp;&nbsp;
+                                <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chef_cards swiper-slide">
+                        <img src="https://i.pinimg.com/736x/d3/c4/2c/d3c42c4d91c6d24b89bf8ab2175e9f75.jpg" alt="" />
+                        <div class="chef_content">
+                            <h2>Remeno Fentos</h2>
+                            <p class="position">senior chef</p>
+                            <div class="social_icons">
+                                <i class="fa-brands fa-square-facebook"></i>&nbsp;&nbsp;
+                                <i class="fa-brands fa-square-instagram"></i>&nbsp;&nbsp;
+                                <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chef_cards swiper-slide">
+                        <img src="https://media.istockphoto.com/id/1204174960/photo/indian-asian-woman-chef-wearing-apron-and-holding-wooden-spatula-while-standing-isolated-over.jpg?s=612x612&w=0&k=20&c=llhC-Q5cRGnlN9nCIVsQb4Uhk32mF0Fnmag2RM7SwBU="
+                            alt="" />
+                        <div class="chef_content">
+                            <h2>Remeno Fentos</h2>
+                            <p class="position">senior chef</p>
+                            <div class="social_icons">
+                                <i class="fa-brands fa-square-facebook"></i>&nbsp;&nbsp;
+                                <i class="fa-brands fa-square-instagram"></i>&nbsp;&nbsp;
+                                <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container">
+            <div class="footer_container">
+                <div class="about_us">
+                    <h2><img src="https://img.freepik.com/premium-vector/food-logo-design_985554-6.jpg" alt="" /></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At cupiditate accusantium
+                        dolores vel atque iure officiis aliquid libero iusto quam!</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="oppenig_hours">
+                    <h2>Oppenig Hours</h2>
+                    <p class="day">MONDAY: <span>CLOSE</span></p>
+                    <p class="day">TUE-FRI: <span>---------10:00 AM 9:00 PM</span></p>
+                    <p class="day">STAURDAY: <span>---------10:00 AM 9:00 PM</span></p>
+                    <p class="day">STAURDAY: <span>---------10:00 AM 12:00 PM</span></p>
+                    <p class="day">SUNDAY: <span>---------10:00 AM 12:00 PM</span></p>
+                </div>
+                <div class="content_us">
+                    <h2>Content Us</h2>
+                    <h3>GET IN TOUCH</h3>
+                    <P>+916362335516</P>
+                    <P class="add">Add</P>
+                    <p>
+                        121 King Stree,Melboures Victoria 3000 Australia ANBN 11 1191 159 741
+                    </p>
+                    <p class="email">Email</p>
+                    <p>order@foodlover.com or sales@example.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                copyright 2025 &copy; MEAL MATCH Resturant Desigend by
+                <a href="https://onlineittus.com">onlineittus Tutorials</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
+    <script src="./signuplogin.js"></script>
+   
 </body>
 </html>
